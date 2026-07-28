@@ -1,0 +1,40 @@
+/* 전체 레이아웃 확인용: 추후 삭제 */
+*{
+    border: solid 1px red;
+}
+
+/* 전체 하이퍼링크 속성 */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+}
+
+#header>img{
+    width: 200px;
+    height: 50px;
+}
+
+#menu{
+    margin: auto 0px;
+}
+
+#menu>a{
+    margin: 0 5px;
+    font-weight: bolder;
+}
+
+.button{
+    background-color: pink;
+    border: none;
+    width: 120px;
+    height: 35px;
+    margin: auto 0px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+}
