@@ -103,3 +103,14 @@ const petInfo = [
     tcode: 2       // 2: cat
   }
 ];
+
+const typeList = [
+  {
+    tcode: 1,
+    tname: "강아지"
+  },
+  {
+    tcode: 2,
+    tname: "고양이"
+  }
+];
