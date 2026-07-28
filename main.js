@@ -157,6 +157,7 @@ const formList = [
     }
 ];
 
+//동물 종류
 const typeList = [
   {
     tcode: 1,
@@ -168,7 +169,7 @@ const typeList = [
   }
 ];
 
-
+//시 리스트
 const siList = [
   { scode: 11000, siName: "서울특별시" },
   { scode: 23000, siName: "인천직할시" },
@@ -176,7 +177,7 @@ const siList = [
   { scode: 41390, siName: "경기도 시흥시" }
 ];
 
-
+//구(동) 리스트
 const dongList = [
   { dcode: 11110, dongName: "종로구" },
   { dcode: 11140, dongName: "중구" },
@@ -210,5 +211,6 @@ const dongList = [
   { dcode: 23230, dongName: "부평구" },
   { dcode: 23260, dongName: "서구" },
   { dcode: 41171, dongName: "만안구" },
-  { dcode: 41173, dongName: "동안구" }
+  { dcode: 41173, dongName: "동안구" },
+  { dcode: 0 , donNamd:"구 없음"}
 ];
