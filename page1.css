@@ -1,0 +1,53 @@
+/* 자주 사용되는 기본 CSS */
+
+*{ 
+    box-sizing: border-box;     /* content + padding 포함 사이즈 정의 */
+    padding: 0px; margin: 0px;  /* 기본 여백 제거 */
+
+}
+
+a{  
+    text-decoration: none;      /* a하이퍼링크 밑줄 제거 */
+    color: black;           /* a하이퍼링크 색상 검정 */
+}
+
+li{
+    list-style-type: none;      /* li 항목 글머리 제거 */
+}
+/* 자주 사용되는 기본 CSS */
+
+/* 전체 레이아웃 확인용: 추후 삭제 */
+*{
+    border: solid 1px red;
+}
+
+
+#header{
+    display: flex;
+    justify-content: space-around;
+}
+
+#header>img{
+    width: 200px;
+    height: 50px;
+}
+
+#menu{
+    margin: auto 0px;
+}
+
+#menu>a{
+    margin: 0 5px;
+    font-weight: bolder;
+}
+
+.button{
+    background-color: pink;
+    border: none;
+    width: 120px;
+    height: 35px;
+    margin: auto 0px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+}
