@@ -1,4 +1,5 @@
 //동물정보
+//동물정보
 const petInfo = [
   {
     pcode: 1,
@@ -6,16 +7,16 @@ const petInfo = [
     pgender: true,
     pkg: 15,
     page: 1,
-    pimg: "###",
+    pimg: "./img/pet1.png",
     ppersonality: "사나움",
-    pjoong: true,  // 1: true (함)
-    pyeah: true,   // 1: true (함)
+    pjoong: true,
+    pyeah: true,
     pdate: "2026-03-01",
     pshelter: 1,
     pcomment: "보리는 구조 당시 몸과 마음이 많이 다친 상태였기 때문에 가까이 다가가면 무서워 해요. 천천히 다가가 주세요.",
-    scode: 1,
-    dcode: 31,
-    tcode: 1       // 1: dog
+    scode: 11000,
+    dcode: 11110,
+    tcode: 1
   },
   {
     pcode: 2,
@@ -23,16 +24,16 @@ const petInfo = [
     pgender: true,
     pkg: 25,
     page: 4,
-    pimg: "###",
+    pimg: "./img/pet3.png",
     ppersonality: "귀여움",
-    pjoong: false, // 0: false (안 함)
-    pyeah: false,  // 0: false (안 함)
+    pjoong: false,
+    pyeah: false,
     pdate: "2024-10-10",
     pshelter: 5,
     pcomment: "조금 예민한 성격입니다. 이 아이 혼자 기르실 수 있는 분이시면 좋겠습니다.",
-    scode: 2,
-    dcode: 12,
-    tcode: 1       // 1: dog
+    scode: 23000,
+    dcode: 23230,
+    tcode: 1
   },
   {
     pcode: 3,
@@ -40,16 +41,16 @@ const petInfo = [
     pgender: false,
     pkg: 12,
     page: 12,
-    pimg: "###",
+    pimg: "./img/pet2.png",
     ppersonality: "온순함",
-    pjoong: true,  // 1: true (함)
-    pyeah: false,  // 0: false (안 함)
+    pjoong: true,
+    pyeah: false,
     pdate: "2020-08-27",
     pshelter: 1,
-    pcomment: "다른 강아지들과도 친하게 지내고 순한 아이 입니다. 엄마는 비숑 아빠는 푸들입니다.",
-    scode: 3,
-    dcode: 26,
-    tcode: 2       // 2: cat
+    pcomment: "다른 고양이들과도 잘 지내고 사람도 좋아하는 순한 아이입니다.",
+    scode: 41170,
+    dcode: 41171,
+    tcode: 2
   },
   {
     pcode: 4,
@@ -57,16 +58,16 @@ const petInfo = [
     pgender: false,
     pkg: 11,
     page: 4,
-    pimg: "###",
+    pimg: "./img/pet5.png",
     ppersonality: "착함",
-    pjoong: false, // 0: false (안 함)
-    pyeah: true,   // 1: true (함)
+    pjoong: false,
+    pyeah: true,
     pdate: "2013-06-30",
     pshelter: 2,
     pcomment: "구조 당시 겁이 많았지만 지금은 사람을 정말 좋아하고 활발한 아이입니다.",
-    scode: 4,
-    dcode: 14,
-    tcode: 1       // 1: dog
+    scode: 41390,
+    dcode: 0,
+    tcode: 1
   },
   {
     pcode: 5,
@@ -74,16 +75,16 @@ const petInfo = [
     pgender: true,
     pkg: 14,
     page: 11,
-    pimg: "###",
+    pimg: "./img/pet4.png",
     ppersonality: "똑똑함",
-    pjoong: true,  // 1: true (함)
-    pyeah: true,   // 1: true (함)
+    pjoong: true,
+    pyeah: true,
     pdate: "2021-04-05",
     pshelter: 7,
-    pcomment: "산책을 좋아하고 사람을 잘 따르는 아이입니다.",
-    scode: 1,
-    dcode: 27,
-    tcode: 2       // 2: cat
+    pcomment: "사람을 잘 따르고 애교가 많은 고양이입니다.",
+    scode: 11000,
+    dcode: 11680,
+    tcode: 2
   },
   {
     pcode: 6,
@@ -91,16 +92,84 @@ const petInfo = [
     pgender: false,
     pkg: 7,
     page: 8,
-    pimg: "###",
+    pimg: "./img/pet6.png",
     ppersonality: "활발함",
-    pjoong: true,  // 1: true (함)
-    pyeah: true,   // 1: true (함)
+    pjoong: true,
+    pyeah: true,
     pdate: "2025-12-11",
     pshelter: 8,
-    pcomment: "간식을 좋아하는 아이입니다. 밥은 잘 먹지 않고 간식을 안 주면 물수도 있어요",
-    scode: 2,
-    dcode: 63,
-    tcode: 2       // 2: cat
+    pcomment: "간식을 좋아하는 아이입니다. 밥은 잘 먹지 않고 간식을 안 주면 물 수도 있어요.",
+    scode: 23000,
+    dcode: 23260,
+    tcode: 2
+  },
+  {
+    pcode: 7,
+    pname: "초코",
+    pgender: true,
+    pkg: 18,
+    page: 3,
+    pimg: "./img/pet7.png",
+    ppersonality: "충성심",
+    pjoong: true,
+    pyeah: false,
+    pdate: "2022-07-18",
+    pshelter: 3,
+    pcomment: "산책을 정말 좋아하는 아이입니다. 활동적인 가족에게 잘 어울립니다.",
+    scode: 41170,
+    dcode: 41173,
+    tcode: 1
+  },
+  {
+    pcode: 8,
+    pname: "해피",
+    pgender: false,
+    pkg: 9,
+    page: 2,
+    pimg: "./img/pet9.png",
+    ppersonality: "애교많음",
+    pjoong: true,
+    pyeah: true,
+    pdate: "2023-09-14",
+    pshelter: 4,
+    pcomment: "사람을 보면 먼저 다가와 꼬리를 흔드는 사랑스러운 강아지입니다.",
+    scode: 11000,
+    dcode: 11710,
+    tcode: 1
+  },
+  {
+    pcode: 9,
+    pname: "별이",
+    pgender: false,
+    pkg: 5,
+    page: 2,
+    pimg: "./img/pet8.png",
+    ppersonality: "조용함",
+    pjoong: false,
+    pyeah: true,
+    pdate: "2024-01-25",
+    pshelter: 6,
+    pcomment: "조용한 환경을 좋아하며 사람 품에서 쉬는 것을 좋아합니다.",
+    scode: 23000,
+    dcode: 23170,
+    tcode: 2
+  },
+  {
+    pcode: 10,
+    pname: "호두",
+    pgender: true,
+    pkg: 6,
+    page: 5,
+    pimg: "./img/pet10.png",
+    ppersonality: "호기심",
+    pjoong: true,
+    pyeah: false,
+    pdate: "2022-11-02",
+    pshelter: 2,
+    pcomment: "새 장난감을 좋아하고 호기심이 많은 고양이입니다.",
+    scode: 41390,
+    dcode: 0,
+    tcode: 2
   }
 ];// 3 페이지
 
