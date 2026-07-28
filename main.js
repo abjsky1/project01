@@ -1,3 +1,4 @@
+//동물정보
 const petInfo = [
   {
     pcode: 1,
