@@ -1,3 +1,4 @@
+//동물정보
 const petInfo = [
   {
     pcode: 1,
@@ -154,4 +155,15 @@ const formList = [
         pcode: 3,
         scode: 1
     }
+];
+
+const typeList = [
+  {
+    tcode: 1,
+    tname: "강아지"
+  },
+  {
+    tcode: 2,
+    tname: "고양이"
+  }
 ];
