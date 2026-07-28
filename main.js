@@ -102,3 +102,48 @@ const petInfo = [
     tcode: 2       // 2: cat
   }
 ];
+
+
+const siList = [
+  { scode: 11000, siName: "서울특별시" },
+  { scode: 23000, siName: "인천직할시" },
+  { scode: 41170, siName: "경기도 안양시" },
+  { scode: 41390, siName: "경기도 시흥시" }
+];
+
+
+const dongList = [
+  { dcode: 11110, dongName: "종로구" },
+  { dcode: 11140, dongName: "중구" },
+  { dcode: 11170, dongName: "용산구" },
+  { dcode: 11200, dongName: "성동구" },
+  { dcode: 11215, dongName: "광진구" },
+  { dcode: 11230, dongName: "동대문구" },
+  { dcode: 11260, dongName: "중랑구" },
+  { dcode: 11290, dongName: "성북구" },
+  { dcode: 11305, dongName: "강북구" },
+  { dcode: 11320, dongName: "도봉구" },
+  { dcode: 11350, dongName: "노원구" },
+  { dcode: 11380, dongName: "은평구" },
+  { dcode: 11410, dongName: "서대문구" },
+  { dcode: 11440, dongName: "마포구" },
+  { dcode: 11470, dongName: "양천구" },
+  { dcode: 11500, dongName: "강서구" },
+  { dcode: 11530, dongName: "구로구" },
+  { dcode: 11545, dongName: "금천구" },
+  { dcode: 11560, dongName: "영등포구" },
+  { dcode: 11590, dongName: "동작구" },
+  { dcode: 11620, dongName: "관악구" },
+  { dcode: 11650, dongName: "서초구" },
+  { dcode: 11680, dongName: "강남구" },
+  { dcode: 11710, dongName: "송파구" },
+  { dcode: 11740, dongName: "강동구" },
+  { dcode: 23110, dongName: "중구" },
+  { dcode: 23140, dongName: "동구" },
+  { dcode: 23170, dongName: "미추홀구" },
+  { dcode: 23200, dongName: "남동구" },
+  { dcode: 23230, dongName: "부평구" },
+  { dcode: 23260, dongName: "서구" },
+  { dcode: 41171, dongName: "만안구" },
+  { dcode: 41173, dongName: "동안구" }
+];
