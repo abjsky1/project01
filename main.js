@@ -1,6 +1,6 @@
 //동물정보
 //동물정보
-const petInfo = [
+export const petInfo = [
   {
     pcode: 1,
     pname: "보리",
@@ -175,7 +175,7 @@ const petInfo = [
 
 
 //보호소 리스트
-const shelterList = [
+export const shelterList = [
     { shcode: 1, shname: "성결보호소" },
     { shcode: 2, shname: "유린보호소" },
     { shcode: 3, shname: "병준보호소" },
@@ -188,7 +188,7 @@ const shelterList = [
 
 
 // 신청서 리스트
-const formList = [
+export const formList = [
     {
         fcode: 1,
         fname: "권유린",
@@ -227,7 +227,7 @@ const formList = [
 ];
 
 //동물 종류
-const typeList = [
+export const typeList = [
   {
     tcode: 1,
     tname: "강아지"
@@ -239,7 +239,7 @@ const typeList = [
 ];
 
 //시 리스트
-const siList = [
+export const siList = [
   { scode: 11000, siName: "서울특별시" },
   { scode: 23000, siName: "인천직할시" },
   { scode: 41170, siName: "경기도 안양시" },
@@ -247,7 +247,7 @@ const siList = [
 ];
 
 //구(동) 리스트
-const dongList = [
+export const dongList = [
   { dcode: 11110, dongName: "종로구" },
   { dcode: 11140, dongName: "중구" },
   { dcode: 11170, dongName: "용산구" },

@@ -9,9 +9,17 @@ a{
     color: black;
 }
 
+/*배경 색 지정*/
+body{
+    margin: 0 0px;
+}
+/* 헤더 */
 #header{
     display: flex;
-    justify-content: space-around;
+    width: 1280px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: white;
 }
 
 #header>img{
@@ -30,11 +38,94 @@ a{
 
 .button{
     background-color: pink;
-    border: none;
-    width: 120px;
-    height: 35px;
-    margin: auto 0px;
+    width: 115px;
+    height: 30px;
+    margin: auto 5px;
     color: white;
     font-weight: bolder;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+/*헤더 끝*/
+
+
+/*바디*/
+#main{
+    background-color: #f9f9f1;
+}
+
+#mainInner{
+    width:1280px;
+    margin:0 auto;
+}
+
+/*아이들*/
+#title{
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 20px 10px 10px 10px;
+}
+
+#comment{
+    font-size: 10px;
+    color: gray;
+    margin: 0 10px;
+}
+
+/*필터박스*/
+#filterBox{
+    display: flex;
+    margin: 0 auto;
+}
+
+#filterBox>select{
+    margin: auto 15px auto 0px;
+}
+
+#filterBox>input{
+    margin: auto 15px auto 0px;
+}
+
+#filterBox>button{
+    height: 25px;
+    margin:auto 20px;
+}
+
+/*petInfo*/
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/* = 1fr*4(전체가로공간을  4등분해서 4개열로 만듬) */
+    gap: 10px; /* 카드 간격 */
+}
+
+.box{
+    background-color: white;
+    border: solid 1px gray;
+}
+
+.box>img{
+    margin: 5px 5px;
+}
+
+.petBoxTitle{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+
+.name{
+    font-weight: bolder;
+}
+
+.petTypeBox{
+    margin:auto 0px;
+    border:solid 2px pink;
+    font-size: 10px;
+    padding: 0 10px;
+}
+
+.petComment{
+    margin: 5px 5px;
+    color: gray;
+    font-size: 15px;
 }

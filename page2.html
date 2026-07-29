@@ -16,17 +16,47 @@
             <a href="#">입양안내</a>
             <a href="#">커뮤니티</a>
         </div>
-        <button class="button">입양 신청</button>
+        <a class="button" href="page4.html">입양 신청</a>
     </div><!--헤더 끝-->
     
     <!--메인-->
-    <div id = "background">
-        <div id="title">아이들</div>
-        <div id="comment">새로운 가족을 기다리는 아이들을 만나보세요.</div>
-        <input placeholder="이름을 입력해 주세요...">
+    <div id = "main">
+        <div id = "mainInner">
+            <div id="title">아이들</div>
+            <div id="comment">새로운 가족을 기다리는 아이들을 만나보세요.</div>
+            <!--필터박스-->
+            <div id = "filterBox">
+                <input id="filterName" placeholder="이름을 입력해 주세요...">
+                <!--강아지/고양이 선택-->
+                <select id="filterType" name = "petType">
+                    <option value=1>강아지</option>
+                    <option value=2>고양이</option>
+                </select>
+                <!--성별-->
+                <select id="filterGender" name = "gender">
+                    <option value=true>여자</option>
+                    <option value=flase>남자</option>
+                </select>
+                <!--나이-->
+                <input id="filterage" placeholder="나이 입력">
+                <!--지역-->
+                <select id = "filterSi" name = "si">
+                    <option value=11000>서울시</option>
+                    <option value=23000>인천시</option>
+                    <option value=41170>안양시</option>
+                    <option value=41390>시흥시</option>
+                </select>
+                <select id = "filtertGu" name = "gu">
+                </select>
+                <button class="button">검색</button>
+            </div><!--필터 박스 끝-->
+            <!--pet List-->
+            <div id = "pets">
+            </div>
+        </div><!--main inner 끝-->
     </div>><!--메인 끝-->
 
     </div>
-    <script src="page2.js"></script>
+    <script type="module" src="page2.js"></script>
 </body>
 </html>
