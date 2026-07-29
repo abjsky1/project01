@@ -24,7 +24,9 @@ li{
 
 #header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 #header>img{
@@ -46,8 +48,144 @@ li{
     border: none;
     width: 120px;
     height: 35px;
-    margin: auto 0px;
+    margin: auto 10px auto 0;
     color: white;
     font-weight: bolder;
     border-radius: 10px;
 }
+
+#상단박스{
+    background-color: #f9f9f1;
+}
+
+#상단텍스트박스{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#상단텍스트내용{
+    margin: 50 0 50 100px;
+}
+
+.font1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.font2{
+    color: pink;
+}
+
+.기다리는아이들{
+    margin-bottom: 5px;
+}
+
+.font3{
+    font-size: 15px;
+    color: darkgrey;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#아이들보러가기버튼{
+    width: 160px;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+}
+
+#상단메인이미지{
+    width: 350px;
+    height: 350px;
+    background-image: url(./img/maindagandcatlogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin: auto 150;
+}
+
+#메인목록박스{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#메인목록박스상단{
+    display: flex;
+    justify-content: space-between;
+}
+
+#메인목록박스상단더보기{
+    font-size: 13px;
+    margin: 20px 10 0 0;
+}
+
+#입양가능한아이들{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0 25 100;
+}
+
+#메인목록리스트들{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 25px 100;
+}
+
+.목록리스트박스{
+    width: 22%;
+    background-color: #fff2f4;
+}
+
+img{width: 100%;}
+
+.펫이름{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 11;
+}
+
+.펫정보{
+    font-size: 16px;
+    margin: 11 11 20 11;
+    color: rgb(150, 150, 150);
+    font-weight: bold;
+}
+
+#입양절차안내박스{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#입양절차안내{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 100;
+}
+
+#입양절차안내전체{
+    background-color: #f9f9f1;
+}
+
+#입양절차{
+    margin: 25px 100;
+    display: flex;
+    justify-content: space-around;
+}
+
+#입양절차박스{
+    width: 13%;
+    text-align: center;
+}
+
+
+/* 
+이미지 넣기 position으로 위치 찾아서 진행
+입양절차쪽 진행
+*/
