@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font
 }
 
 body {
@@ -48,10 +49,10 @@ a {
 
 .button {
     padding: 15px 27px;
-    background-color: green;
+    background-color: pink;
     color: white;
-    border: 1px solid black;
-    border-radius: 25px;
+    border: 1px solid pink;
+    border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
       margin-top: 5px;
@@ -65,13 +66,17 @@ a {
     height: 710px;
     margin: 0 auto;
     padding: 25px 40px;
-    background-color: ivory;
+    background-color: #f9f9f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 
 /* 신청서 영역 */
 .leftBox {
     width: 700px;
+    
 }
 
 .leftBox h1 {
@@ -83,7 +88,7 @@ a {
 
 .explain {
     margin-bottom: 25px;
-    color: grey;
+    color: black;
     font-size: 17px;
     margin-left: 30px;
 }
@@ -102,10 +107,10 @@ a {
 }
 
 .box > input {
-    width: 500px;
+    width: 550px;
     height: 36px;
     padding: 5px 10px;
-    border: 1px solid black;
+    border: 1px solid pink;
     border-radius: 9px;
     background-color: white;
 }
@@ -119,7 +124,7 @@ a {
 }
 
 .reasonBox > label {
-    width: 230px;
+    width: 205px;
     font-size: 17px;
     font-weight: bold;
 }
@@ -127,9 +132,10 @@ a {
 .reasonBox textarea {
     width: 500px;
     height: 60px;
-    padding: 10px;
-    border: 1px solid black;
+    padding: 5px 10px;
+    border: 1px solid pink;
     border-radius: 14px;
+    
 }
 
 
@@ -149,7 +155,7 @@ a {
 }
 
 .agreeBox a {
-    color: green;
+    color: pink;
     font-size: 14px;
 }
 
@@ -157,13 +163,72 @@ a {
 /* 신청 버튼 */
 .submitButton {
     display: block;
-    width: 580px;
+    width: 530px;
     height: 55px;
     margin-left: 180px;
-    background-color: green;
+    background-color: pink;
     color: white;
-    border: 1px solid black;
     border-radius: 25px;
+    border: 1px solid pink;
     font-size: 20px;
     font-weight: bold;
 }
+
+/* 오른쪽 박스 */
+
+.checkBox {
+    width: 380px;
+    height: 250px;
+    margin-right: 50px;
+    margin-top: 30px;
+    background-color: pink;
+    border-radius:  25px;
+    padding: 48px;
+    font-size: 15px;
+}
+.checkBox > h2 {
+    text-align: center;
+}
+
+.checkBox > ul {
+    margin-bottom: 40px;
+    padding: 1px;
+    margin-top: 20px;
+    margin-left: 16px;
+    width: 390px;
+
+}
+
+.question {
+    width: 380px;   
+    height: 260px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 23px;
+}
+
+.question > h2 {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+
+    
+}
+
+.question > p {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 9px;
+
+    
+}
+
+.email > h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 9px;
+
+    
+}
+
