@@ -1,65 +1,94 @@
-<!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <title>입양 신청</title>
+    <link rel="stylesheet" href='page4.css'>
 </head>
 
-
 <body>
-            <div id = 'wrap'>
-            <header id = 'header'>
-            <div class = "logo">
-            <a href = "#">
-            <img src = "logo.png" alt = "PAWME 로고">
-            </a>
-            </div>
-            <div class="top">
+
+    <div id="header">
+        <div class="logo">
+            <img src="./img/logo.png">
         </div>
-        </header>
-        <main id = "main">
-            <section class = "formArea">
-                <h1>입양신청</h1>
-                <p> 아이와의 행복한 시간을 위해 정보를 입력해주세요</p>
-
-                <form>
-                <div class="formBox">
-                    <label for="fname">이름</label>
-                    <input type="text" id="fname" name="fname"> 
-                </div>
-
-                <div class="formBox">
-                        <label for="fnumber">연락처</label>
-                        <input type="tel" id="fnumber" name="fnumber">
-                </div>
-
-                <div class="formBox">
-                        <label for="email">이메일</label>
-                        <input type="email" id="email" name="email">
-                </div>
-                
-                <div class="formBox">
-                    <label for="residence">거주형태</label>
-                        <input type="text" id="residence" name="residence" />
-                </div>
-
-                <div class = "formBox">
-                    <span class="formTitle">반려동물 경험</span>
-                </div>
-
-    
-
-                
-
-        
-
-
-            </section> 
-
-        </main>
-
+        <div id="menu">
+            <a href="#">홈</a>
+            <a href="#">아이들</a>
+            <a href="#">입양안내</a>
+            <a href="#">커뮤니티</a>
+        </div>
+         <button class="button">입양 신청</button>
 
     </div>
 
 
-    
+    <!-- 본문 -->
+    <div id="main">
+
+        <!-- 왼쪽 입양 신청 -->
+        <div class="leftBox">
+
+            <h1>입양 신청</h1>
+            <p class="explain"> 아이와의 행복한 시간을 위해 정보를 입력해주세요 </p>
+
+            <!-- 이름 -->
+            <div class="box">
+                <label for="fname">이름</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+
+            <!-- 연락처 -->
+            <div class="box">
+                <label for="fnumber">연락처</label>
+                <input type="text" id="fnumber" name="fnumber">
+            </div>
+
+            <!-- 가족 구성 -->
+            <div class="box">
+                <label for="ffamily">가족 구성</label>
+                <input type="text" id="ffamily" name="ffamily">
+            </div>
+
+           <!-- 반려동물 경험 -->
+            <div class="box">
+            <label for="fexp">반려동물 경험</label>
+            <input type="text" id="fexp" name="fexp">
+            </div>
+
+            <!-- 입양을 원하는 아이 -->
+            <div class="box">
+            <label for="pcode">입양을 원하는 아이</label>
+            <input type="text" id="pcode" name="pcode">
+            </div>
+
+            <!-- 보호소 -->
+            <div class="box">
+            <label for="shcode">보호소</label>
+            <input type="text" id="shcode" name="shcode">
+            </div>
+
+            <!-- 신청 사유 -->
+            <div class="reasonBox">
+            <label for="freason">신청 사유</label>
+            <textarea id="freason" name="freason"></textarea>
+
+            </div>
+
+            <!-- 개인정보 동의 -->
+            <div class="agreeBox">
+            <input type="checkbox" id="acode" name="acode" value="true">
+            <label for="acode"> 개인정보 수집 및 이용에 동의합니다. </label>
+            <a href="#">[자세히 보기]</a>
+
+            </div>
+
+            <!-- 신청 버튼 -->
+            <button type="button" class="submitButton"> 신     .   청    .  하     .  기 </button>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
