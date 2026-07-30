@@ -47,50 +47,64 @@ function petInfoShow(){
     let filterLength=6 //filterArray의 속성 개수
     let filterPetInfoList=[] //filter에 걸러진 객체 배열
     for(let i=0; i<=petInfo.length-1; i++){
-        console.log("반복문실행")
         let filterPetInfo={}
+        //필터값 검증
+        let check = true
         //이름
-        //조건(필터값)이 없거나, 조건에(필터값) 일치하면
-        if(filterArray.name==''||filterArray.name ==petInfo[i].pname)
-            filterPetInfo.pname=petInfo[i].pname
-        else
-            //일치하지않으면 pass, 다음 인덱스 검증
+        //조건(필터값)이 있고 일치하지않으면
+        if(filterArray.name != ''&& filterArray.name!=petInfo[i].pname){
+            check = false
             continue
-        //타입(강아지/고양이)
-        if(filterArray.type==''||filterArray.type ==petInfo[i].tcode){
-            filterPetInfo.tcode=petInfo[i].tcode
         }
-        else
-            continue
-        //성별
-        if(filterArray.gender ==''|| filterArray.gender ==petInfo[i].pgender){
-            filterPetInfo.pgender=petInfo[i].pgender
-        }
-        else
-            continue
-        console.log("출력확인")
-        //나이
-        if(filterArray.age ==''|| filterArray.age ==petInfo[i].page){
-            filterPetInfo.page=petInfo[i].page
-        }
-        else
-            continue
-        console.log("출력확인")
-        //시
-        if(filterArray.si ==''|| filterArray.si ==petInfo[i].scode)
-            filterPetInfo.scode=petInfo[i].scode
-        else if(filterArray.si!=petInfo[i].scode)
-            continue
-        //구,동
-        if(filterArray.gu ==''|| filterArray.gu ==petInfo[i].dcode)
-            filterPetInfo.dcode=petInfo[i].dcode
-        else if(filterArray.gu!=petInfo[i].dcode)
-            continue
-        
-        filterPetInfoList.push(filterPetInfo)
-        console.log(filterPetInfo)
-    }
+        //필터값이 없으면 통과
 
+        //타입(강아지/고양이)
+        if(filterArray.type!=''&&filterArray.type!=petInfo[i].tcode){
+            check = false
+            continue
+        }
+
+        //성별
+        if(filterArray.gender!=''&& filterArray.gender!=petInfo[i].pgender){
+            check = false
+            continue
+        }
+
+        //나이
+        if(filterArray.age!=''&&filterArray.age!=petInfo[i].page){
+            check = false
+            continue
+        }
+
+        //시
+        if(filterArray.si!=''&&filterArray.si!=petInfo[i].scode){
+            check = false
+            continue
+        }
+
+        //구,동
+        if(filterArray.gu != '' && filterArray.gu!=petInfo[i].dcode){
+            check = false
+            continue
+        }
+
+        if(check == true){
+            filterPetInfo.pcode = petInfo[i].pcode
+            filterPetInfo.pname = petInfo[i].pname
+            filterPetInfo.tcode = petInfo[i].tcode
+            filterPetInfo.pgender = petInfo[i].pgender
+            filterPetInfo.page = petInfo[i].page
+            filterPetInfo.pimg = petInfo[i].pimg
+            filterPetInfo.scode = petInfo[i].scode
+            filterPetInfo.dcode = petInfo[i].dcode
+        }
+        console.log("filterInfo: ",filterPetInfo)
+        filterPetInfoList.push(filterPetInfo)
+    }
+    
+    console.log(filterPetInfoList)
+
+    //넣기
     let html=''
     for(let i=0; i<=filterPetInfoList.length-1; i++){
         //새로운행 생성
@@ -105,21 +119,9 @@ function petInfoShow(){
             }
         }
         //type(강아지:1/고양이:2)
-        let petType=''
-        if(filterPetInfoList[i].tcode==1){
-            petType = '강아지'
-        }
-        else if(filterPetInfoList[i].tcode==2){
-            petType = '고양이'
-        }
+        let petType= filterPetInfoList[i].tcode==1? '강아지':'고양이'
         //gender(여:true/남:flase)
-        let gender=''
-        if(filterPetInfoList[i].pgender==1){
-            gender = '여'
-        }
-        else if(filterPetInfoList[i].pgender==2){
-            gender = '남'
-        }
+        let gender= filterPetInfoList[i].pgender==1? '여':'남'
         //지역
         let area=''
         //시이름 찾기
@@ -138,8 +140,9 @@ function petInfoShow(){
                 }
             }
         }
+        filterPetInfoList[i].pimg
         html+=`<div class = "box">
-                        <img src="./img/pet${i+1}.png">
+                        <img src=${filterPetInfoList[i].pimg}>
                         <!--petInfo-->
                         <div>
                             <div class="petBoxTitle">
