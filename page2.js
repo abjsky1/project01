@@ -41,28 +41,58 @@ function filter(){
 
 //기본 출력 함수
 function petInfoShow(){
+    //console.log("함수실행")
     //필터 값 확인
     filter()
     let filterLength=6 //filterArray의 속성 개수
     let filterPetInfoList=[] //filter에 걸러진 객체 배열
     for(let i=0; i<=petInfo.length-1; i++){
+        console.log("반복문실행")
         let filterPetInfo={}
         //이름
-        if(filterArray.name != ''){
-
+        //조건(필터값)이 없거나, 조건에(필터값) 일치하면
+        if(filterArray.name==''||filterArray.name ==petInfo[i].pname)
+            filterPetInfo.pname=petInfo[i].pname
+        else
+            //일치하지않으면 pass, 다음 인덱스 검증
+            continue
+        //타입(강아지/고양이)
+        if(filterArray.type==''||filterArray.type ==petInfo[i].tcode){
+            filterPetInfo.tcode=petInfo[i].tcode
         }
-        if(filterArray.type !=' '){
-
+        else
+            continue
+        //성별
+        if(filterArray.gender ==''|| filterArray.gender ==petInfo[i].pgender){
+            filterPetInfo.pgender=petInfo[i].pgender
         }
-        if(filterArray.gender !=' '){
-            
+        else
+            continue
+        console.log("출력확인")
+        //나이
+        if(filterArray.age ==''|| filterArray.age ==petInfo[i].page){
+            filterPetInfo.page=petInfo[i].page
         }
-        if(filterArray.age !=' '){
-            
-        }
+        else
+            continue
+        console.log("출력확인")
+        //시
+        if(filterArray.si ==''|| filterArray.si ==petInfo[i].scode)
+            filterPetInfo.scode=petInfo[i].scode
+        else if(filterArray.si!=petInfo[i].scode)
+            continue
+        //구,동
+        if(filterArray.gu ==''|| filterArray.gu ==petInfo[i].dcode)
+            filterPetInfo.dcode=petInfo[i].dcode
+        else if(filterArray.gu!=petInfo[i].dcode)
+            continue
+        
+        filterPetInfoList.push(filterPetInfo)
+        console.log(filterPetInfo)
     }
+
     let html=''
-    for(let i=0; i<=petInfo.length-1; i++){
+    for(let i=0; i<=filterPetInfoList.length-1; i++){
         //새로운행 생성
         if((i+1)%4==1){
             //1번재일때
@@ -76,34 +106,34 @@ function petInfoShow(){
         }
         //type(강아지:1/고양이:2)
         let petType=''
-        if(petInfo[i].tcode==1){
+        if(filterPetInfoList[i].tcode==1){
             petType = '강아지'
         }
-        else{
+        else if(filterPetInfoList[i].tcode==2){
             petType = '고양이'
         }
         //gender(여:true/남:flase)
         let gender=''
-        if(petInfo[i].pgender==true){
+        if(filterPetInfoList[i].pgender==1){
             gender = '여'
         }
-        else{
+        else if(filterPetInfoList[i].pgender==2){
             gender = '남'
         }
         //지역
         let area=''
         //시이름 찾기
         for(let j=0;j<=siList.length-1;j++){
-            if(petInfo[i].scode==siList[j].scode){
+            if(filterPetInfoList[i].scode==siList[j].scode){
                 area = siList[j].siName
                 break
             }
         }
         //동/구 이름찾기
         for(let j=0;j<=dongList.length-1;j++){
-            if(petInfo[i].dcode==dongList[j].dcode){
+            if(filterPetInfoList[i].dcode==dongList[j].dcode){
                 //dcode:0 '구 없음'이 아니면 구이름 추가
-                if(dongList[j].dcode=!0){
+                if(dongList[j].dcode!=0){
                     area+=' '+dongList[j].dongName
                 }
             }
@@ -113,11 +143,11 @@ function petInfoShow(){
                         <!--petInfo-->
                         <div>
                             <div class="petBoxTitle">
-                                <div class = "name">${petInfo[i].pname}</div>
+                                <div class = "name">${filterPetInfoList[i].pname}</div>
                                 <div class = "petTypeBox">${petType}</div>
                             </div>
                             <div class="petComment">
-                                ${petInfo[i].page}살 ${gender}아<br/>${area}
+                                ${filterPetInfoList[i].page}살 ${gender}아<br/>${area}
                             </div>
                         </div><!--petInfo end-->
                     </div>`

@@ -9,14 +9,18 @@
 <body>
     <!--헤더-->
     <div id="header">
-        <img src="./img/logo.png">
-        <div id="menu">
-            <a href="#">홈</a>
-            <a href="#">아이들</a>
-            <a href="#">입양안내</a>
-            <a href="#">커뮤니티</a>
+        <div>
+            <img src="./img/logo.png">
+            <div id="menu">
+                <a href="#">홈</a>
+                <a href="#">아이들</a>
+                <a href="#">입양안내</a>
+                <a href="#">커뮤니티</a>
+            </div>
+            <div class="button">
+                <a href="page4.html">입양 신청</a>
+            </div>
         </div>
-        <a class="button" href="page4.html">입양 신청</a>
     </div><!--헤더 끝-->
     
     <!--메인-->
@@ -29,13 +33,15 @@
                 <input id="filter1" placeholder="이름을 입력해 주세요...">
                 <!--강아지/고양이 선택-->
                 <select id="filter2" name = "petType">
+                    <option value=''>선택없음</option>
                     <option value=1>강아지</option>
                     <option value=2>고양이</option>
                 </select>
                 <!--성별-->
                 <select id="filter3" name = "gender">
-                    <option value=true>여자</option>
-                    <option value=flase>남자</option>
+                    <option value=''>선택없음</option>
+                    <option value=1>여자</option>
+                    <option value=2>남자</option>
                 </select>
                 <!--나이-->
                 <input id="filter4" placeholder="나이 입력">
@@ -50,13 +56,13 @@
                 <select id = "filter6" name = "gu">
                     <option value=''>선택없음</option>
                 </select>
-                <button class="button" onclick="petInfoShow()">검색</button>
+                <button class="button" onclick="petInfoShow()">검 색</button>
             </div><!--필터 박스 끝-->
             <!--pet List-->
             <div id = "pets">
             </div>
         </div><!--main inner 끝-->
-    </div>><!--메인 끝-->
+    </div><!--메인 끝-->
 
     </div>
     <script src="main.js"></script>
