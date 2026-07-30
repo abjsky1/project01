@@ -2,7 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font
+    font-family: 'Wonju';
+}
+
+@font-face { 
+    font-family: 'Wonju';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161130@bold/bold/원주체 Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Wonju';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161130@bold/bold/원주체 Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
 }
 
 body {
@@ -93,6 +107,27 @@ a {
     margin-left: 30px;
 }
 
+/* 반려동물 경험 */
+.expBox {
+    align-items: center;
+}
+
+.expCheck {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.expCheck input {
+    width: 10px;
+    height: 10px;
+   
+}
+
+.expCheck label {
+    margin-right: 20px;
+    font-size: 16px;
+}
 
 .box {
     display: flex;
