@@ -24,8 +24,7 @@
 
     <!-- 본문 -->
     <div id="main">
-
-        <!-- 왼쪽 입양 신청 -->
+        <!-- 왼쪽 입양 신청 --> 
         <div class="leftBox">
 
             <h1>입양 신청</h1>
@@ -45,14 +44,24 @@
 
             <!-- 가족 구성 -->
             <div class="box">
-                <label for="ffamily">가족 구성</label>
+                <label for="ffamily">가구 인원</label>
                 <input type="text" id="ffamily" name="ffamily">
             </div>
 
-           <!-- 반려동물 경험 -->
-            <div class="box">
-            <label for="fexp">반려동물 경험</label>
-            <input type="text" id="fexp" name="fexp">
+             <!-- //반려동물 경험 -->
+            <div class="box expBox">
+             <label>반려동물 경험</label>
+
+             <div class="expCheck">
+           
+            <!-- 있음 -->
+            <input type="radio" id="fexpYes" name="fexp" value="1">
+            <label for="fexpYes">있음</label>
+            
+            <!-- 없음 -->
+            <input type="radio" id="fexpNo" name="fexp" value="0">
+            <label for="fexpNo">없음</label>
+            </div>
             </div>
 
             <!-- 입양을 원하는 아이 -->
@@ -119,7 +128,7 @@
 
         </div>
 
-   
+   <script src="page4.js"></script>
 
 </body>
 
