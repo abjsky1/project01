@@ -23,15 +23,38 @@ li{
 }
 */
 
-#header{
-    display: flex;
-    justify-content: space-between;
-    width: 1280px;
-    margin: 0 auto;
-    padding: 10px;
+*{
+    font-family: 'Wonju';
+}    
+
+@font-face { 
+    font-family: 'Wonju';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161130@bold/bold/원주체 Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
 }
 
-#header>img{
+@font-face {
+    font-family: 'Wonju';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161130@bold/bold/원주체 Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* 헤더 */
+#header{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#header>div{
+    justify-content: space-between;
+    display: flex;
+    margin: 0 10px;
+}
+
+#header>div>img{
     width: 200px;
     height: 50px;
 }
@@ -41,20 +64,29 @@ li{
 }
 
 #menu>a{
-    margin: 0 5px;
+    margin: 0 10px;
     font-weight: bolder;
+    font-size: 20px;
+    color: black;
 }
 
 .button{
     background-color: pink;
-    border: none;
-    width: 120px;
-    height: 35px;
-    margin: auto 10px auto 0;
+    width: 115px;
+    margin: auto 5px;
     color: white;
     font-weight: bolder;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
 }
+
+.button>a{
+    display: inline-block;
+    margin: 5px auto;
+    color: white;
+}
+/*헤더 끝*/
 
 #상단박스{
     background-color: #fcfaef;
@@ -75,7 +107,7 @@ li{
 }
 
 .font1{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -88,7 +120,7 @@ li{
 }
 
 .font3{
-    font-size: 15px;
+    font-size: 20px;
     color: darkgrey;
     font-weight: bold;
     margin-bottom: 25px;
@@ -97,7 +129,7 @@ li{
 #아이들보러가기버튼{
     width: 160px;
     padding: 8px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     border-radius: 8px;
     color: white;
@@ -144,8 +176,13 @@ li{
     margin: 0 100px 25px 100;
 }
 
+.목록리스트링크{
+    display: flex;
+    width: 24%;
+}
+
 .목록리스트박스{
-    width: 22%;
+    
     background-color: #fff2f4;
 }
 
@@ -211,19 +248,19 @@ img{width: 100%;}
 }
 
 #입양절차안내이미지2{
-    background-position: -152;
+    background-position: -149;
 }
 
 #입양절차안내이미지3{
-    background-position: -277;
+    background-position: -274;
 }
 
 #입양절차안내이미지4{
-    background-position: -404;
+    background-position: -400;
 }
 
 #입양절차안내이미지5{
-    background-position: -534;
+    background-position: -530;
 }
 
 .입양절차글씨{
