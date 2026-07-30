@@ -33,7 +33,7 @@ a {
 #header {
     width: 1280px;
     height: 110px;
-    margin: 40px auto 0;
+    margin: 60px auto 0;
     padding: 0 55px;
     background-color: white;
     display: flex;
@@ -100,6 +100,17 @@ a {
     font-weight: bold;
 }
 
+
+#shcode {
+    font-family: sans-serif;
+}
+
+#shcode > option {
+        font-family: sans-serif;
+
+
+}
+
 .explain {
     margin-bottom: 25px;
     color: black;
@@ -132,6 +143,8 @@ a {
 .box {
     display: flex;
     margin-bottom: 20px;
+    
+    
 }
 
 .box > label {
@@ -150,6 +163,15 @@ a {
     background-color: white;
 }
 
+.box select {
+   width: 550px;
+    height: 36px;
+    padding: 5px 10px;
+    border: 1px solid pink;
+    border-radius: 9px;
+    background-color: white;
+
+}
 
 /* 신청 사유 */
 .reasonBox {
@@ -203,7 +225,7 @@ a {
     margin-left: 180px;
     background-color: pink;
     color: white;
-    border-radius: 25px;
+    border-radius: 10px;
     border: 1px solid pink;
     font-size: 20px;
     font-weight: bold;
@@ -216,22 +238,40 @@ a {
     height: 250px;
     margin-right: 50px;
     margin-top: 30px;
-    background-color: pink;
+    background-color: #f9f9f1;
+    border: 5px solid pink;
     border-radius:  25px;
     padding: 48px;
     font-size: 15px;
 }
 .checkBox > h2 {
-    text-align: center;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 9px;
 }
 
 .checkBox > ul {
-    margin-bottom: 40px;
-    padding: 1px;
+    margin-bottom: 30px;
     margin-top: 20px;
     margin-left: 16px;
     width: 390px;
+}
 
+
+.checkBox > h2,
+.checkBox > ul {
+    position: relative;
+    top: -10px;
+}
+
+.checkBox > ul > li{ 
+    margin-bottom: 9px;
+}
+
+.checkBox,
+.question {
+    padding-left: 48px;
+    box-sizing: border-box;
 }
 
 .question {
@@ -240,23 +280,30 @@ a {
     margin-top: 20px;
     background-color: white;
     border-radius: 25px;
-    padding: 23px;
+    padding: 35px 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 .question > h2 {
     margin: 0 auto;
     padding: 10px;
     text-align: left;
-
-    
 }
 
 .question > p {
     text-align: left;
     margin-bottom: 30px;
     margin-left: 9px;
+}
 
-    
+
+.img {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 130px;
+    height: auto;
 }
 
 .email > h2 {
@@ -266,4 +313,3 @@ a {
 
     
 }
-

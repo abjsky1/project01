@@ -17,7 +17,6 @@
             <a href="#">입양안내</a>
             <a href="#">커뮤니티</a>
         </div>
-         <button class="button">입양 신청</button>
 
     </div>
 
@@ -45,7 +44,7 @@
             <!-- 가족 구성 -->
             <div class="box">
                 <label for="ffamily">가구 인원</label>
-                <input type="text" id="ffamily" name="ffamily">
+                <input type="number" id="ffamily" name="ffamily">
             </div>
 
              <!-- //반려동물 경험 -->
@@ -70,11 +69,22 @@
             <input type="text" id="pcode" name="pcode">
             </div>
 
+
             <!-- 보호소 -->
-            <div class="box">
-            <label for="shcode">보호소</label>
-            <input type="text" id="shcode" name="shcode">
-            </div>
+           <div class="box">
+    <label for="shcode">보호소</label>
+        <select id="shcode" name="shcode">
+        <option value="">보호소를 선택하세요</option>
+        <option value="1">성결보호소</option>
+        <option value="2">유린보호소</option>
+        <option value="3">병준보호소</option>
+        <option value="4">훈석보호소</option>
+        <option value="5">소연보호소</option>
+        <option value="6">시흥보호소</option>
+        <option value="7">안양보호소</option>
+        <option value="8">서울보호소</option>
+        </select>
+        </div>
 
             <!-- 신청 사유 -->
             <div class="reasonBox">
@@ -115,6 +125,7 @@
                 <p> (평일 10:00 ~ 18:00)</p>
                 <div class = "email">
                 <h2> abc@gmail.com</h2>
+               <img class = "img" src="./img/강아지여자.png">
                 
                     </div>
 
