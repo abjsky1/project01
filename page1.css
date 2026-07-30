@@ -17,16 +17,18 @@ li{
 /* 자주 사용되는 기본 CSS */
 
 /* 전체 레이아웃 확인용: 추후 삭제 */
+/*
 *{
     border: solid 1px red;
 }
-
+*/
 
 #header{
     display: flex;
     justify-content: space-between;
     width: 1280px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 #header>img{
@@ -55,7 +57,7 @@ li{
 }
 
 #상단박스{
-    background-color: #f9f9f1;
+    background-color: #fcfaef;
 }
 
 #상단텍스트박스{
@@ -67,6 +69,9 @@ li{
 
 #상단텍스트내용{
     margin: 50 0 50 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .font1{
@@ -97,6 +102,7 @@ li{
     border-radius: 8px;
     color: white;
     background-color: pink;
+    border: solid 1px #fff2f4;
     display: flex;
     justify-content: center;
 }
@@ -107,7 +113,7 @@ li{
     background-image: url(./img/maindagandcatlogo.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:101%;
     margin: auto 150;
 }
 
@@ -161,6 +167,7 @@ img{width: 100%;}
 #입양절차안내박스{
     width: 1280px;
     margin: 0 auto;
+    padding: 10 0;
 }
 
 #입양절차안내{
@@ -182,6 +189,103 @@ img{width: 100%;}
 #입양절차박스{
     width: 13%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.입양절차안내이미지{
+    background-image: url(./img/입양절차로고.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -10;
+    width: 45%;
+    height: 62px;
+    margin: 15 auto;
+    border-radius: 100%;
+}
+
+
+#입양절차안내이미지1{
+    background-position: -12;
+}
+
+#입양절차안내이미지2{
+    background-position: -152;
+}
+
+#입양절차안내이미지3{
+    background-position: -277;
+}
+
+#입양절차안내이미지4{
+    background-position: -404;
+}
+
+#입양절차안내이미지5{
+    background-position: -534;
+}
+
+.입양절차글씨{
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+    font-weight: bold;
+}
+
+
+#입양후기박스{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#입양후기{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 100;
+}
+
+#입양후기내용박스{
+    margin: 0px 100;
+    display: flex;
+}
+
+#입양후기내용{
+    width: 72%;
+    margin: 2% 0% 0% 5%;
+    padding: 2% 5%;
+    background-color: #f9f9f1;
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+    font-weight: bold;
+}
+
+#입양후기이미지{
+    width: 18%;
+    margin: 2% 5% 0% 0;
+    background-image: url(./img/pet9.png);
+    background-size: cover;
+    background-position: 0 -50;
+}
+
+#입양후기내용하단{
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+#입양후기버튼박스{
+    width: 15%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.입양후기버튼{
+    width: 5px;
+    height: 6px;
+    background-color: darkgray;
+    border-radius: 100%;
+    margin: 5px 2px;
+    
 }
 
 
