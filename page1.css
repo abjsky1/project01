@@ -41,15 +41,20 @@ li{
     font-display: swap;
 }
 
+/* 헤더 */
 #header{
-    display: flex;
-    justify-content: space-between;
     width: 1280px;
     margin: 0 auto;
-    padding: 10px;
+    background-color: white;
 }
 
-#header>img{
+#header>div{
+    justify-content: space-between;
+    display: flex;
+    margin: 0 10px;
+}
+
+#header>div>img{
     width: 200px;
     height: 50px;
 }
@@ -59,20 +64,29 @@ li{
 }
 
 #menu>a{
-    margin: 0 5px;
+    margin: 0 10px;
     font-weight: bolder;
+    font-size: 20px;
+    color: black;
 }
 
 .button{
     background-color: pink;
-    border: none;
-    width: 120px;
-    height: 35px;
-    margin: auto 10px auto 0;
+    width: 115px;
+    margin: auto 5px;
     color: white;
     font-weight: bolder;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
 }
+
+.button>a{
+    display: inline-block;
+    margin: 5px auto;
+    color: white;
+}
+/*헤더 끝*/
 
 #상단박스{
     background-color: #fcfaef;
@@ -93,7 +107,7 @@ li{
 }
 
 .font1{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -106,7 +120,7 @@ li{
 }
 
 .font3{
-    font-size: 15px;
+    font-size: 20px;
     color: darkgrey;
     font-weight: bold;
     margin-bottom: 25px;
@@ -115,7 +129,7 @@ li{
 #아이들보러가기버튼{
     width: 160px;
     padding: 8px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     border-radius: 8px;
     color: white;
