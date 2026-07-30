@@ -1,85 +1,113 @@
 
-* {
-
+@font-face { 
+    font-family: 'Wonju';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161130@bold/bold/원주체 Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Wonju';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161130@bold/bold/원주체 Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+*{
+    font-family: 'Wonju';
+}    
 
 
 .전체{
-    width: 700px;
-    margin: 0 auto;
-
+    width: 900px;
+    margin: 0px auto;
+    background-color:#fff2f4;
+    border-radius: 40px;
 }
 
 #강아지이미지박스{
     width: 40%;  
-    margin-left: 50px;  
+    margin-left: 60px;  
 }
 
 #강아지이미지{
     width: 100%;
     display: flex;
+    border-radius: 30px;
 }
 
 .상단{
     display: flex;
     width: 800px;
     margin: 0 auto;
+    padding: 20px 0px;
     justify-content:space-between;
-    background-color:antiquewhite
-
 }
 
 .상단2{
     width: 40%;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 
 .테이블{
+    margin-top: 20px;
+    width: 100%;
     border: 2px solid black;
     border-collapse: collapse;
-    font-size: 10px;
+    font-size: 15px;
     font-weight : bold;  
+}
 
+.테이블 td:nth-child(1){
+    width: 24%;;
 }
 
 
+#기타내용{
+    max-height: 35px;
+    overflow-y: auto;
+}
+
 .테이블 td{
-    border: 2px solid black;
+    border: 2px solid rgb(116, 116, 116);
     padding: 15px;
 }
 
 
-
 .강아지{
-    font-size: 15px;
+    font-size: 18px;
+    padding-top: 3px;
     border: 2px solid pink;
     text-align: center;
     font-weight: bolder;
     color: rgb(216, 87, 108);
-    background-color: #fbf5f5;
+    background-color: #ffffff;
     border-radius: 10px;
     width: 60px;
-
-    
 }
 
+.펫의정보{
+    font-size: 17px;
+    color: rgb(135, 135, 135);
+    font-weight: 500;
+}
 
 .보리{
-    font-size: 30px;
-    font-weight: bolder;
-
+    font-size: 40px;
+    font-weight: bold;
+    margin:10px 0px 0px 0px;
 }
 
 
 .아이{
     font-size: large;
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center;
 }
 
 .겁 {
-    
+    text-align: center;
 }
 
 .입양버튼박스{
@@ -90,7 +118,9 @@
 .입양버튼{
     background-color: pink;
     border: 2px solid pink;
-
+    border-radius: 4px;
+    padding: 7px;
+    width: 100px;
 }
 
 
@@ -104,23 +134,25 @@
     background-color: white;
     border: 2px solid white;
     color: grey;
+    border-radius: 4px;
+    padding: 5.5px;
+    width: 70px;
 }
 
 #교회캠프{
     width: 700px;
     margin: 0 auto;
-
 }
 
 .중간{
-    background-color: rgb(245, 219, 223);
-    width: 600px;
-    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid pink;
+    width: 660px;
     justify-content: center;
     margin: 20px auto;
     border-radius: 10px;
+    padding: 10px;
 }
-
 
 .하단{
     width: 700px;
@@ -129,6 +161,7 @@
     flex-direction: row;
     justify-content: center;
     border-radius: 5px;
+    padding-bottom: 20px;
 }
 
 
