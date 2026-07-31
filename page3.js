@@ -1,4 +1,9 @@
+
+
 //링크 가져오기
+
+petLink();
+
 function petLink(){
     let url=new URLSearchParams(location.search)
     let pcode = url.get('pcode')
@@ -26,7 +31,7 @@ function petLink(){
         if(petInfo[i].pcode == pcode){
             //이미지
             img = petInfo[i].pimg
-            //console.log(img)
+            console.log(img)
             //타입
             petInfo[i].tcode == 1? type="강아지":type="고양이"
             //이름
@@ -72,66 +77,79 @@ function petLink(){
     }
 
     //출력
-    let html = `<div class="전체">
+    let html = `
                     <div class="상단">
+
                         <div id="강아지이미지박스">
                             <img id="강아지이미지" src="${img}"> 
                         </div>
+                    
+
+                        <!--pet 정보-->
+
+                        <div class="상단2">
+
+                            <div class="강아지">${type}</div>
+                            <div class="보리">${name}</div>
+                            <div class="펫의정보">${age}살 · ${gender}아 · ${weight}kg</div>
+                        
+
+                            <div>
+                                <table class="테이블">
+                                    <tbody>
+                                        <tr>
+                                            <td> 성격 </td> <td> ${personality} </td> 
+                                        </tr>
+                                        <tr>
+                                            <td> 건강상태 </td> <td> 중성화 "${joong}" · "예방접종 ${yeah}" </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 구조일 </td>  <td> ${date}  </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 보호소 </td> <td> ${shelter} </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td> 위치 </td> <td> ${si} ${gu} </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 기타 </td> <td><div id="기타내용"> ${comment} </div></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        
                     </div>
-                    <!--pet 정보-->
-                    <div class="상단2">
-                        <div class="강아지">${type}</div>
-                        <div class="보리">${name}</div>
-                        <div class="펫의정보">${age}살 · ${gender}아 · ${weight}kg</div>
-                    </div>
-                    <div>
-                        <table class="테이블">
-                            <tbody>
-                                <tr>
-                                    <td> 성격 </td> <td> ${personality} </td> 
-                                </tr>
-                                <tr>
-                                    <td> 건강상태 </td> <td> 중성화 "${joong}" · "예방접종 ${yeah}" </td>
-                                </tr>
-                                <tr>
-                                    <td> 구조일 </td>  <td> ${date}  </td>
-                                </tr>
-                                <tr>
-                                    <td> 보호소 </td> <td> ${shelter} </td>
-                                
-                                </tr>
-                                <tr>
-                                    <td> 위치 </td> <td> ${si} ${gu} </td>
-                                </tr>
-                                <tr>
-                                    <td> 기타 </td> <td><div id="기타내용"> ${comment} </div></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    
                     <div id="교회캠프">
                         <div class="중간">
                             <div class="아이"> 아이에 대해 더 알려드릴게요! </div>
                             <div class="겁"> ${comment} </div>
                         </div>
                     </div>
+
                     <div class="하단"> 
                         <div class="입양버튼박스">
                             <button class="입양버튼">입양 신청하기</button>
                         </div>
+                    
+
+                        <div class="좋아요버튼">
+                            <button class="좋아요">🤍좋아요</button>
+                        </div>
                     </div>
-                    <div class="좋아요버튼">
-                        <button class="좋아요">🤍좋아요</button>
-                    </div>
-                </div>`
+                `
 
     console.log(html)
-    document.querySelector('#petInfoBox').innerHTML=html
+    document.querySelector('.전체').innerHTML=html
 }
 
 
 //함수실행
-petLink();
+
 
 
 
