@@ -141,7 +141,7 @@ function petInfoShow(){
             }
         }
         filterPetInfoList[i].pimg
-        html+=` <a href="#">
+        html+=` <a href="page3.html?pcode=${filterPetInfoList[i].pcode}">
                     <div class = "box">
                         <img src="${filterPetInfoList[i].pimg}">
                         <!--petInfo-->

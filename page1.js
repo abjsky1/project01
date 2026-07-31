@@ -24,7 +24,7 @@ for(i=0 ; i<=3 ; i++){
         }
     }
     
-    html += `<a class="목록리스트링크" href="${""}">
+    html += `<a class="목록리스트링크" href="page3.html?pcode=${petInfo[i].pcode}">
                 <div class="목록리스트박스">
 
                     <div><img src="${petInfo[i].pimg}"></div>
