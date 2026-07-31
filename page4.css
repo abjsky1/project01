@@ -12,12 +12,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Wonju';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161130@bold/bold/원주체 Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
-}
 
 body {
     background-color: grey;
@@ -32,7 +26,7 @@ a {
 /* 헤더 */
 #header {
     width: 1280px;
-    height: 110px;
+    height: 75px;
     margin: 60px auto 0;
     padding: 0 55px;
     background-color: white;
@@ -163,6 +157,7 @@ a {
     background-color: white;
 }
 
+
 .box select {
    width: 550px;
     height: 36px;
@@ -220,9 +215,9 @@ a {
 /* 신청 버튼 */
 .submitButton {
     display: block;
-    width: 530px;
+    width: 475px;
     height: 55px;
-    margin-left: 180px;
+    margin-left: 223px;
     background-color: pink;
     color: white;
     border-radius: 10px;
@@ -232,6 +227,10 @@ a {
 }
 
 /* 오른쪽 박스 */
+
+.rightBox{
+    margin-top: 30px;
+}
 
 .checkBox {
     width: 380px;
@@ -277,7 +276,7 @@ a {
 .question {
     width: 380px;   
     height: 260px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: white;
     border-radius: 25px;
     padding: 35px 50px;
@@ -310,6 +309,5 @@ a {
     text-align: left;
     margin-bottom: 30px;
     margin-left: 9px;
-
     
 }
