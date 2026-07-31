@@ -141,7 +141,8 @@ function petInfoShow(){
             }
         }
         filterPetInfoList[i].pimg
-        html+=`<div class = "box">
+        html+=` <a href="#">
+                    <div class = "box">
                         <img src=${filterPetInfoList[i].pimg}>
                         <!--petInfo-->
                         <div>
@@ -153,7 +154,8 @@ function petInfoShow(){
                                 ${filterPetInfoList[i].page}살 ${gender}아<br/>${area}
                             </div>
                         </div><!--petInfo end-->
-                    </div>`
+                    </div>
+                </a>`
     }//for문 end
 
     //html 출력

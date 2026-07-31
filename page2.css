@@ -29,8 +29,9 @@ body{
 }
 /* 헤더 */
 #header{
+    display: flex;
     width: 1280px;
-    height: 100px;
+    height: 75px;
     margin: 0 auto;
     background-color: white;
 }
@@ -38,7 +39,8 @@ body{
 #header>div{
     justify-content: space-between;
     display: flex;
-    margin: 0 10px;
+    width: 100%;
+    margin: auto 10px;
 }
 
 #header>div>img{
@@ -91,6 +93,14 @@ body{
     font-weight: bolder;
     font-size: 40px;
     padding: 35px 0px 10px 10px;
+}
+
+.name{
+    color:black;
+}
+
+.petTypeBox{
+    color:black;
 }
 
 #comment{
