@@ -1,5 +1,5 @@
-    //링크 가져오기
-    function petLink(){
+//링크 가져오기
+function petLink(){
     let url=new URLSearchParams(location.search)
     let pcode = url.get('pcode')
     for(let i=0; i<=petInfoList.length-1; i++){
@@ -9,9 +9,24 @@
             petInfoList[i].tcode == 1? type="강아지":type="고양이"
             let name = petInfoList[i].pname
             let age = petInfoList[i].page
-            petInfoList[i].pgender 
+            let gender=''
+            petInfoList[i].pgender == 1? gender="여":gender="남" 
+            let weight = petInfoList[i].pkg
+            let personality = petInfoList[i].ppersonality
+            let joong
+            petInfoList[i].pjoong == 1? joong="완료":joong="전"
+            let yeah
+            petInfoList[i].pyeah == 1? yeah="완료":yeah="전"
+            let date = petInfoList[i].pdate
+            let shelterFind = petInfoList[i].pshelter
+            for(let j=0; j<=shelterList.length-1; j++){
+                if(shelterFind == shelterList[j].shcode){
+                    let shelter = shelterList[j].shname
+                }
+            }
         }
     }
+    //출력
     let html = `<div class="전체">
                     <div class="상단">
                         <div id="강아지이미지박스">
@@ -28,15 +43,15 @@
                         <table class="테이블">
                             <tbody>
                                 <tr>
-                                    <td> 성격 </td> <td> 사람을 좋아하고 애교가 많아요! </td> 
+                                    <td> 성격 </td> <td> ${personality} </td> 
                                 </tr>
                                 <tr>
-                                    <td> 건강상태 </td> <td> 중성화 만료 / 예방접종 완료 </td>
+                                    <td> 건강상태 </td> <td> 중성화 "${joong}" · "예방접종 ${yeah}" </td>
                                 </tr>
                                 <tr>
-                                    <td> 구조일 </td>  <td> 2023.02.10  </td>
+                                    <td> 구조일 </td>  <td> ${date}  </td>
                                 </tr>
-                                    <td> 보호소 </td> <td> 행복한 보호소 </td>
+                                    <td> 보호소 </td> <td> ${shelter} </td>
                                 </tr>
                                 <tr>
                                     <td> 위치 </td> <td> 서울 강남구 </td>
