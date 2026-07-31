@@ -1,4 +1,4 @@
-// 1. 동물 정보
+//1. 동물 정보
 const petInfo = [
     {
         pcode: 1,
@@ -147,6 +147,7 @@ let formList = [
             let freason = document.querySelector('[name="freason"]').value;
             let acode = document.querySelector('[name="acode"]').checked;
             let fexpCheck = document.querySelector('input[name="fexp"]:checked');
+            alert('신청완료')
 
 
 
