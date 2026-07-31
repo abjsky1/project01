@@ -34,12 +34,6 @@ li{
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Wonju';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161130@bold/bold/원주체 Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
-}
 
 /* 헤더 */
 #header{
