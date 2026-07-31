@@ -10,84 +10,60 @@ function filter(){
     let filterLength=6
     for(let i=0; i<=filterLength-1; i++){
         let inputCheck = document.querySelector(`#filter${i+1}`).value
-        //name
-        if(i+1==1){
+        if(i+1==1)//name
             filterArray.name=inputCheck
-            //입력값 없으면 name:' '으로 저장
-        }
-        //type
-        else if(i+1==2){
+        else if(i+1==2)//type
             filterArray.type=inputCheck
-        }
-        //gender
-        else if(i+1==3){
+        else if(i+1==3)//gender
             filterArray.gender=inputCheck
-        }
-        //age
-        else if(i+1==4){
+        else if(i+1==4)//age
             filterArray.age=inputCheck
-        }
-        //si
-        else if(i+1==5){
+        else if(i+1==5)//si
             filterArray.si=inputCheck
-        }
-        //gu,dong
-        else if(i+1==6){
+        else if(i+1==6)//gu,dong
             filterArray.gu=inputCheck
-        }
     }
-    console.log(filterArray)
 }
 
 //기본 출력 함수
 function petInfoShow(){
-    //console.log("함수실행")
     //필터 값 확인
     filter()
-    let filterLength=6 //filterArray의 속성 개수
-    let filterPetInfoList=[] //filter에 걸러진 객체 배열
+    //filterArray의 속성 개수  filter에 걸러진 객체 배열
+    let filterLength=6;        let filterPetInfoList=[] 
     for(let i=0; i<=petInfo.length-1; i++){
         let filterPetInfo={}
-        //필터값 검증
-        let check = true
+        let check = true //필터값 검증변수
         //이름
-        //조건(필터값)이 있고 일치하지않으면
         if(filterArray.name != ''&& filterArray.name!=petInfo[i].pname){
-            check = false
+            /*값이 없거나 값이 일치하면*/ check = false 
             continue
         }
-        //필터값이 없으면 통과
-
         //타입(강아지/고양이)
         if(filterArray.type!=''&&filterArray.type!=petInfo[i].tcode){
             check = false
             continue
         }
-
         //성별
         if(filterArray.gender!=''&& filterArray.gender!=petInfo[i].pgender){
             check = false
             continue
         }
-
         //나이
         if(filterArray.age!=''&&filterArray.age!=petInfo[i].page){
             check = false
             continue
         }
-
         //시
         if(filterArray.si!=''&&filterArray.si!=petInfo[i].scode){
             check = false
             continue
         }
-
         //구,동
         if(filterArray.gu != '' && filterArray.gu!=petInfo[i].dcode){
             check = false
             continue
         }
-
         if(check == true){
             filterPetInfo.pcode = petInfo[i].pcode
             filterPetInfo.pname = petInfo[i].pname
@@ -162,13 +138,10 @@ function petInfoShow(){
     document.querySelector('#pets').innerHTML=html
 }
 
-//구/동 출력 함수
+//필터 구/동 출력 함수
 function guDongShow(){
-    //시코드 저장
-    let si = document.querySelector('#filter5').value
-    //비우기(전 선택 지우기)
-    //시흥이면 '구없음'만 표시
-    if(si==41390){
+    let si = document.querySelector('#filter5').value//시코드 저장
+    if(si==41390){ //시흥이면 '구없음'만 표시
         document.querySelector('#filter6').innerHTML=''
     }
     //시흥이 아니면 선택지1번에 '선택지없음'추가
@@ -178,32 +151,27 @@ function guDongShow(){
     let html =''
     //console.log(si)
     for(let i=0; i<=dongList.length-1;i++){
-        //서울
-        if(si==11000){
+        if(si==11000){//서울
                 if(dongList[i].dcode<12000&&11000<=dongList[i].dcode){
                     html+=`<option value=${dongList[i].dcode}>${dongList[i].dongName}</option>`
                 }
         }
-        //인천
-        else if(si==23000){
+        else if(si==23000){//인천
             if(dongList[i].dcode<24000&&23000<=dongList[i].dcode){
                 html+=`<option value=${dongList[i].dcode}>${dongList[i].dongName}</option>`
             }
         }
-        //안양
-        else if(si==41170){
+        else if(si==41170){//안양
             if(dongList[i].dcode==41171||dongList[i].dcode==41173){
                 html+=`<option value=${dongList[i].dcode}>${dongList[i].dongName}</option>`
             }
         }
-        //시흥
-        else if(si==41390){
+        else if(si==41390){//시흥
             if(dongList[i].dcode==0){
                 html+=`<option value=${dongList[i].dcode}>${dongList[i].dongName}</option>`
             }
         }
     }
-    //console.log(html)
     document.querySelector('#filter6').innerHTML+=html
     return
 }

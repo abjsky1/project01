@@ -133,7 +133,7 @@ function petLink(){
 
                     <div class="하단"> 
                         <div class="입양버튼박스">
-                            <button class="입양버튼">입양 신청하기</button>
+                            <button onclick="formLink()" class="입양버튼">입양 신청하기</button>
                         </div>
                     
 
@@ -147,9 +147,9 @@ function petLink(){
     document.querySelector('.전체').innerHTML=html
 }
 
-
-//함수실행
-
+function formLink(){
+    location.href='page4.html'
+}
 
 
 
