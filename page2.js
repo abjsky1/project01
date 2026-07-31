@@ -143,7 +143,7 @@ function petInfoShow(){
         filterPetInfoList[i].pimg
         html+=` <a href="#">
                     <div class = "box">
-                        <img src=${filterPetInfoList[i].pimg}>
+                        <img src="${filterPetInfoList[i].pimg}">
                         <!--petInfo-->
                         <div>
                             <div class="petBoxTitle">
