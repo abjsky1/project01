@@ -81,6 +81,7 @@ body{
 /*바디*/
 #main{
     background-color: #f9f9f1;
+    padding-bottom: 20px;
 }
 
 #mainInner{
