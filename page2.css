@@ -173,3 +173,87 @@ body{
     color: gray;
     font-size: 15px;
 }
+
+
+
+/* 푸터 */
+
+#footer {
+    width: 1280px;
+    background-color: white;
+    margin: 30px auto;
+}
+
+.footerInner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerInner> p {
+    margin-left: 90px;
+}
+
+/* 로고 영역 */
+
+
+.footerBrand {
+     width: 188px;
+    height: 110px;
+
+}
+
+.footerInfo {
+    margin-left : 10px;
+
+}
+
+.footerBrand img {
+    width: 85px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footerBrand p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    width: 200px;
+    margin-top: 30px;
+}
+
+/* 제목 */
+.footerInner h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #ff9db0;
+}
+
+/* 내용 */
+.footerInner p {
+    margin: 0 0 7px;
+    font-size: 13px;
+    line-height: 1.5;
+    color:gray;
+}
+
+.footerTeam {
+    width: 188px;
+    height: 110px;
+    margin-left : 10px;
+
+}
+
+.footerTeam>p{
+    color: gray;
+}
+
+.footerContact {
+    width: 188px;
+    height: 110px;
+    margin-left : 10px;
+}
+
+.footerContact>p{
+    color:gray;
+}
